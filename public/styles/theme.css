@@ -1,0 +1,30 @@
+:root {
+    /* TEXT COLOR */
+    --default-text-color: black;
+
+    /* BACKGROUND COLOR */
+    --default-background-color: white;
+    --switcher-root-background-color: #6ec3f5;
+
+    /* BORDER COLOR */
+    --default-border-color: black;
+}
+
+:root[theme='dark'] {
+    /* TEXT COLOR */
+    --default-text-color: white;
+
+    /* BACKGROUND COLOR */
+    --default-background-color: black;
+    --switcher-root-background-color: grey;
+
+    /* BORDER COLOR */
+    --default-border-color: white;
+}
+
+body {
+    background-color: var(--default-background-color);
+    transition: background-color 0.25s ease-in-out;
+
+    font-family: "Jersey 10", serif;
+}

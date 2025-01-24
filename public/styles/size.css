@@ -1,0 +1,8 @@
+:root {
+    /* SWITCHER SIZE */
+    --switcher-root-size-width: 90px;
+    --switcher-root-size-height: 40px;
+
+    --switcher-defore-size-width: 32px;
+    --switcher-defore-size-height: 32px;
+}

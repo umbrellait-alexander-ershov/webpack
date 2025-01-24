@@ -1,0 +1,42 @@
+.root {
+  width: 100%;
+  min-height: 100%;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--default-background-color);
+  transition: background-color 0.25s ease-in-out;
+
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+
+  color: var(--default-text-color);
+}
+
+.listItems {
+  max-width: 600px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+
+  & li {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px;
+
+    color: var(--default-text-color);
+  }
+}

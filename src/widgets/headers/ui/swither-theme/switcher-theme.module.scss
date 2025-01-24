@@ -1,0 +1,39 @@
+.root {
+  width: var(--switcher-root-size-width);
+  height: var(--switcher-root-size-height);
+
+  position: relative;
+
+  appearance: none;
+
+  background-color: var(--switcher-root-background-color);
+  transition: background-color 0.25s ease-in-out;
+
+  border: 1px solid var(--default-border-color);
+  border-radius: 15px;
+
+  &:before {
+    content: "";
+    position: absolute;
+
+    width: var(--switcher-defore-size-width);
+    height: var(--switcher-defore-size-height);
+
+    left: 4px;
+
+    top: calc((var(--switcher-root-size-height) - var(--switcher-defore-size-height)) / 2 - 1px);
+
+    border-radius: 50%;
+
+    transition: transform 0.25s ease-in-out, background 0.25s ease-in-out;
+
+    background: url("../assets/sun.png") center;
+    background-size: 32px 32px;
+  }
+
+  &:checked:before {
+    transform: translateX(calc(var(--switcher-root-size-width) - var(--switcher-defore-size-width) - 10px));
+    background: url("../assets/moon.png");
+    background-size: 32px 32px;
+  }
+}
