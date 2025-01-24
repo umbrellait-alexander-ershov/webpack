@@ -6,6 +6,8 @@
 
   appearance: none;
 
+  cursor: pointer;
+
   background-color: var(--switcher-root-background-color);
   transition: background-color 0.25s ease-in-out;
 
